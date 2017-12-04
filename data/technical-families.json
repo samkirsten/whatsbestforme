@@ -1,0 +1,54 @@
+{
+  "technicalFamilies": [
+    {
+      "familyId": "0",
+      "name": "Mobility",
+      "type": "mobility"
+    },
+    {
+      "familyId": "1",
+      "name": "Infrastructure",
+      "type": "infrastructure"
+    },
+    {
+      "familyId": "2",
+      "name": "Cold chain",
+      "type": "cold_chain"
+    },
+    {
+      "familyId": "3",
+      "name": "Telecom",
+      "type": "telecom"
+    },
+    {
+      "familyId": "4",
+      "name": "Biomed",
+      "type": "biomed"
+    },
+    {
+      "familyId": "5",
+      "name": "HVAC",
+      "type": "hvac"
+    },
+    {
+      "familyId": "6",
+      "name": "Energy",
+      "type": "energy"
+    },
+    {
+      "familyId": "7",
+      "name": "Watsan",
+      "type": "watsan"
+    },
+    {
+      "familyId": "8",
+      "name": "HLM",
+      "type": "hlm"
+    },
+    {
+      "familyId": "9",
+      "name": "IT",
+      "type": "it"
+    }
+  ]
+}

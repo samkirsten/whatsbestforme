@@ -1,0 +1,49 @@
+{
+  "tacticalFamilies": [
+    {
+      "familyId": "0",
+      "name": "Highly contagious disease outbreaks",
+      "description": "Deployment and support of activities tackling diseases which require to be contained with universal protection for patients and staff over the ordinary measures with an imposed limited timeframe"
+    },
+    {
+      "familyId": "1",
+      "name": "Distributions",
+      "description": "Deployment and support of activities aiming atimmunization (preventive and curative), water access,shelter items and/or NFI distribution (protection,primary needs) for population coverage within apredefined execution timeframe"
+    },
+    {
+      "familyId": "2",
+      "name": "Medical activities in emergency",
+      "description": "Deployment and support of first aid and primary needs activities with an imposed limited timeframe for implementation"
+    },
+    {
+      "familyId": "3",
+      "name": "Surgical activities in emergency",
+      "description": "Deployment and support of surgical activities, with an imposed limited timeframe for implementation"
+    },
+    {
+      "familyId": "4",
+      "name": "Health facilities",
+      "description": "Deployment and support of permanent hospitalization facilities with multiple services"
+    },
+    {
+      "familyId": "5",
+      "name": "Mobile medical activities",
+      "description": "Deployment and support activities that imply a movement of staff and material aiming at reaching the beneficiaries in the place of need"
+    },
+    {
+      "familyId": "6",
+      "name": "Out-patient department activities",
+      "description": "Deployment and support of ambulatory care activities aiming at population coverage"
+    },
+    {
+      "familyId": "7",
+      "name": "Vertical IPD activities",
+      "description": "Deployment and support of specialized hospitalization facilities aiming at treating a specific disease"
+    },
+    {
+      "familyId": "8",
+      "name": "Medical activities in restricted area",
+      "description": "Deployment and support of public health activities and/or consultations inside areas with controlled access or movement"
+    }
+  ]
+}

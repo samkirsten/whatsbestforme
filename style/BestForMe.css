@@ -1,0 +1,1381 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,500,600i,700);
+/*---------------------------------------------------------------------*/
+/*  Main SASS file
+/*  Used to import the SASS files from both core and theme in correct order
+/*  Theme is set by grunt from environment variable
+/*  Order the SASS files get compiled:
+/*  1) External libs
+/*  2) Core variables SASS files 
+/*  3) Theme variable overrides
+/*  4) Core SASS files
+/*  5) Theme SASS overrides
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+/*  SASS variables main file
+/*  Used to import all the external SASS libs
+/*  Order the SASS files get compiled:
+/*  1) External libs
+/*  2) Core variables SASS files 
+/*  3) theme variable overrides
+/*  4) other core SASS files
+/*  5) other theme SASS overrides
+/*---------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,500,600i,700);
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+html {
+  height: 100%; }
+
+body {
+  margin: 0; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+li {
+  padding: 0;
+  margin: 0; }
+
+label {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+:focus {
+  outline: none; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */ }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+input[type="button"],
+input[type="submit"],
+button {
+  background-color: transparent;
+  border: none; }
+
+/*---------------------------------------------------------------------*/
+/*  SASS variables main file
+/*  Used to import all the variable SASS files
+/*  Order the SASS files get compiled:
+/*  1) External libs
+/*  2) Core variables SASS files 
+/*  3) theme variable overrides
+/*  4) other core SASS files
+/*  5) other theme SASS overrides
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+/*  SASS variables
+/*  Color variables go there except
+/*  Order the SASS files get compiled:
+/*  1) External libs
+/*  2) Core variables SASS files 
+/*  3) theme variable overrides
+/*  4) other core SASS files
+/*  5) other theme SASS overrides
+/*---------------------------------------------------------------------*/
+/* Colours */
+/* Colour Functional Variables */
+/* Title colours */
+/* Text colours */
+/* Nav colours */
+/* Link colours */
+/* Stat colours */
+/* Breadcrumb colours */
+/* Component colours */
+/* Notification Colours */
+/* Profile Colours */
+/* Drop Down Colours */
+/*---------------------------------------------------------------------*/
+/*  SASS variables
+/*  Font variables go there except
+/*  Order the SASS files get compiled:
+/*  1) External libs
+/*  2) Core variables SASS files 
+/*  3) theme variable overrides
+/*  4) other core SASS files
+/*  5) other theme SASS overrides
+/*---------------------------------------------------------------------*/
+/** Font URLS **/
+/** For live/staging the fonts.css file will be used instead, so ensure
+the font urls below are included in font.css as well. **/
+/*---------------------------------------------------------------------*/
+/*  Grid settings SASS file
+/*  All the grid related variables go there (eg. breakpoints and widths)
+/*  Order the SASS files get compiled:
+/*  1) External libs
+/*  2) Core variables SASS files 
+/*  3) theme variable overrides
+/*  4) other core SASS files
+/*  5) other theme SASS overrides
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+/*  SASS variables
+/*  Variables neither color/font/grid go there
+/*  Order the SASS files get compiled:
+/*  1) External libs
+/*  2) Core variables SASS files 
+/*  3) theme variable overrides
+/*  4) other core SASS files
+/*  5) other theme SASS overrides
+/*---------------------------------------------------------------------*/
+/* Component Variables */
+/*---------------------------------------------------------------------*/
+/*  Core SASS file
+/*  Order the SASS files get compiled:
+/*  1) External libs
+/*  2) Core variables SASS files 
+/*  3) theme variable overrides
+/*  4) other core SASS files
+/*  5) other theme SASS overrides
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+/*  Base rules not using classes, just standard HTML elements
+/*  Only use for the most basic, generic rules as classes are more eficient for anything specific
+/*  Guidelines: https://smacss.com/book/type-base
+/*---------------------------------------------------------------------*/
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+li > a {
+  display: block;
+  padding: 0; }
+
+body, p, a {
+  color: #4C4C4C; }
+
+p {
+  margin: 10px 0; }
+
+/*---------------------------------------------------------------------*/
+/*  Typography
+/*  Include all fonts and define styles
+/*---------------------------------------------------------------------*/
+/** Font Styles **/
+body, button, p, li, a, h1, h2, h3, h4 {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  color: #4C4C4C;
+  word-wrap: break-word;
+  -webkit-font-smoothing: subpixel-antialiased; }
+
+p, li {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px; }
+
+h1 {
+  font-weight: 700;
+  font-size: 36px; }
+
+h2, h3 {
+  font-weight: 700;
+  font-size: 18px; }
+
+h4 {
+  font-weight: 700;
+  font-size: 14px; }
+
+a {
+  font-weight: 600;
+  color: #4C4C4C; }
+  a:hover {
+    color: #999999; }
+
+/*---------------------------------------------------------------------*/
+/*  Animation SASS file
+/*---------------------------------------------------------------------*/
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    margin-left: 0px; }
+  100% {
+    opacity: 1;
+    margin-left: 0px; } }
+
+/*---------------------------------------------------------------------*/
+/*  Mixins SASS file
+/*  All mixins go there (custom and borrowed from third party libraries)
+/*---------------------------------------------------------------------*/
+/* Layouts mixins for content pages with a left sidenav */
+/* Layouts mixins for full width content pages, without a left sidenav */
+/*---------------------------------------------------------------------*/
+/*  Header layout SASS file
+/*  Guidelines: https://smacss.com/book/type-layout
+/*---------------------------------------------------------------------*/
+#header {
+  width: 100%;
+  padding-top: 1px;
+  min-height: 100px;
+  -webkit-box-shadow: 0px 0.5px 5px 0px rgba(76, 76, 76, 0.5);
+  -moz-box-shadow: 0px 0.5px 5px 0px rgba(76, 76, 76, 0.5);
+  box-shadow: 0px 0.5px 5px 0px rgba(76, 76, 76, 0.5);
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 2; }
+
+.header-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px 0 10px; }
+
+.header-menu {
+  max-width: 50%;
+  display: inline-block;
+  float: right; }
+
+.menu-item {
+  display: inline-block;
+  font-size: 18px;
+  margin: 36px 10px 6px 10px; }
+
+/*---------------------------------------------------------------------*/
+/*  Main content layout SASS file
+/*  Guidelines: https://smacss.com/book/type-layout
+/*---------------------------------------------------------------------*/
+body {
+  background-color: #f8f8f8;
+  height: 100%; }
+
+#main {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 191px 10px 200px 10px; }
+  #main::after {
+    clear: both;
+    content: "";
+    display: block; }
+  @media screen and (max-width: 640px) {
+    #main {
+      padding: 191px 10px 0 10px; } }
+
+#bestForMe-app {
+  min-height: 100%;
+  position: relative;
+  overflow: auto; }
+
+.list-title {
+  font-size: 16px;
+  display: inline; }
+
+.list-detail {
+  font-size: 12px;
+  font-weight: 300; }
+
+table {
+  width: 100% !important; }
+  table tbody {
+    text-align: center; }
+
+/*---------------------------------------------------------------------*/
+/*  Site footer
+/*---------------------------------------------------------------------*/
+#footer {
+  display: block;
+  position: absolute;
+  height: 150px;
+  background-color: #f8f8f8;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0; }
+  @media screen and (max-width: 640px) {
+    #footer {
+      display: none; } }
+
+.footer {
+  -webkit-box-shadow: 0px -2px 1px -1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px -2px 1px -1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px -2px 1px -1px rgba(0, 0, 0, 0.5); }
+  .footer .footer-container {
+    margin: 0 auto;
+    max-width: 1000px; }
+    @media screen and (max-width: 900px) {
+      .footer .footer-container {
+        padding: 0 10px 0 10px; } }
+  .footer .footer-brand {
+    display: inline-block;
+    margin: 20px 0 0 0;
+    float: right; }
+  .footer .footer-content {
+    display: inline-block;
+    margin: 20px 0 0 0; }
+  .footer .footer-title {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0; }
+  .footer .footer-text {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    color: #4C4C4C;
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 0 0 10px;
+    vertical-align: middle; }
+  .footer .footer-icon {
+    background: url("../../../assets/images/bestForMe-logo.svg") no-repeat;
+    height: 20px;
+    min-width: 20px;
+    display: inline-block;
+    background-size: 100%;
+    vertical-align: middle; }
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100px; }
+
+.footer-link {
+  width: 100px;
+  height: 20px;
+  margin: 5px 50px 5px 0; }
+  .footer-link:hover {
+    cursor: pointer; }
+    .footer-link:hover p {
+      color: #999999; }
+
+/*
+* -- WORDPRESS CORE STYLES --
+* These classes come included in the returned HTML from Wordpress that Handlebars passes through
+* These styles are shared by any view that has content from the CMS such as article and news details
+*/
+.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+  height: auto;
+  width: auto;
+  max-width: 100%; }
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+a img.alignnone {
+  margin: 5px 20px 20px 0; }
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.clearall {
+  padding: 1em 0 1em 0; }
+
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center; }
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px; }
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto; }
+
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px; }
+
+.wp-video {
+  max-width: 100%; }
+  .wp-video video {
+    max-width: 100%; }
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */ }
+
+/**
+  Input SCSS File
+ */
+.postcode-input-container {
+  display: block; }
+
+.postcode-input-label {
+  text-align: center; }
+
+.postcode-input {
+  width: 30vw;
+  display: block;
+  margin: 0 auto;
+  height: 40px;
+  border-radius: 10px;
+  border-color: #4c4c4c;
+  text-align: center;
+  text-transform: uppercase; }
+
+.postcode-buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .postcode-buttons button {
+    margin: 10px; }
+
+.tag-item {
+  background-color: #DDDDDD;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 0 5px 0 5px;
+  padding: 0 10px 0 10px;
+  text-transform: uppercase; }
+  .tag-item p {
+    display: inline-block; }
+
+/*---------------------------------------------------------------------*/
+/*  Brand module SASS file
+/*  Guidelines: https://smacss.com/book/type-module
+/*---------------------------------------------------------------------*/
+.brand {
+  position: relative;
+  max-width: 50%;
+  display: inline-block; }
+
+.brand-title {
+  background-image: url("../../../assets/images/bestForMe-logo.svg");
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+/**
+  Results SCSS file
+ */
+.jumbo-title {
+  text-align: center; }
+
+.logo-caption {
+  text-align: center; }
+
+.strength {
+  display: flex; }
+
+.progress-label {
+  display: flex;
+  width: 25%; }
+
+.progress {
+  width: 50%;
+  display: flex; }
+
+.result-postcode {
+  text-transform: uppercase;
+  text-align: center; }
+
+.postcode-list-item {
+  margin: 10px 10px 10px 30px; }
+  .postcode-list-item h3 {
+    display: inline-block;
+    width: 10%; }
+
+.provider-row {
+  display: flex; }
+
+.individual-result {
+  width: 25%; }
+
+.red {
+  background-color: red; }
+
+.yellow {
+  background-color: orange; }
+
+.green {
+  background-color: green; }
+
+.logo-grid {
+  display: flex;
+  justify-content: center; }
+  .logo-grid .col-xs-3 {
+    width: 25%;
+    justify-content: center; }
+
+.img-container {
+  display: flex;
+  justify-content: center; }
+
+.provider-logo {
+  max-height: 50px;
+  opacity: 0.25; }
+
+.small-provider-logo {
+  display: block;
+  max-height: 40px;
+  margin: 0 auto; }
+
+.selected {
+  opacity: 1; }
+
+.list-icon {
+  margin: 0 5px 0 5px;
+  width: 15%; }
+
+.list-group {
+  margin-top: 20px; }
+
+.small-logo-container {
+  width: 100%; }
+
+.provider-progress {
+  margin: 10px auto; }
+
+details {
+  margin: 10px 5px 10px 5px; }
+
+DETAILS[open] .down-arrow {
+  transform: rotate(180deg); }
+
+summary {
+  align-items: center;
+  cursor: pointer; }
+
+summary::-webkit-details-marker {
+  display: none; }
+
+.down-arrow-container {
+  display: flex;
+  justify-content: center; }
+
+.down-arrow {
+  background-image: url("../../assets/images/chevron-down.svg");
+  background-size: 100%;
+  height: 35px;
+  width: 25px;
+  display: block;
+  transition: transform 0.5s; }
+
+/*---------------------------------------------------------------------*/
+/*  Logout button in header SASS file
+/*  Guidelines: https://smacss.com/book/type-module
+/*---------------------------------------------------------------------*/
+.confirm {
+  background-color: #4C4C4C !important; }
+
+/*---------------------------------------------------------------------*/
+/*  Main nav module SASS file
+/*  Guidelines: https://smacss.com/book/type-module
+/*---------------------------------------------------------------------*/
+.main-nav {
+  background-color: #4C4C4C;
+  width: 100%;
+  text-align: center; }
+  .main-nav-list {
+    width: 940px;
+    margin: 0 auto;
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    height: 40px; }
+    @media screen and (max-width: 1000px) {
+      .main-nav-list {
+        width: 100%; } }
+    @media screen and (max-width: 640px) {
+      .main-nav-list {
+        width: 100%; } }
+  .main-nav-item {
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    font-weight: lighter; }
+  .main-nav-link {
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    font-size: 20px;
+    height: 40px;
+    padding: 6px 0px 0px 0px;
+    margin-left: 19px;
+    margin-right: 19px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    @media screen and (max-width: 1000px) {
+      .main-nav-link {
+        margin-left: 8px;
+        margin-right: 8px;
+        padding-left: 10px;
+        padding-right: 10px; } }
+    @media screen and (max-width: 640px) {
+      .main-nav-link {
+        margin: 0;
+        padding-left: 5px;
+        padding-right: 5px; } }
+    .main-nav-link.is-active {
+      font-weight: lighter;
+      background-color: #ffffff;
+      color: #4C4C4C; }
+    .main-nav-link:hover {
+      background-color: #ffffff;
+      color: #4C4C4C; }
+
+/*---------------------------------------------------------------------*/
+/* Loading Screen SASS file
+/*---------------------------------------------------------------------*/
+/** Loading Circle **/
+/** Old style, currently unused **/
+/**
+.loader {
+
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 2px solid $tundora;
+  border-right: 2px solid $gray;
+  border-bottom: 2px solid $tundora;
+  border-left: 2px solid $gray;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 0.7s infinite linear;
+  animation: load8 0.7s infinite linear;
+}
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+**/
+/** Ghost Circle **/
+/** Default BestForMe Style **/
+.loader {
+  width: 5em;
+  height: 5em;
+  margin: 160px auto;
+  background-color: #4C4C4C;
+  border-radius: 100%;
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out; }
+
+@-webkit-keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0); }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0; } }
+
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0; } }
+
+/*---------------------------------------------------------------------*/
+/*  Error notice SASS file
+/*  Leave for the passive box on the error screen even though we now use swal for dismissable boxes!
+/*---------------------------------------------------------------------*/
+.error-notice {
+  display: block;
+  border: solid 2px #BB005D;
+  color: #BB005D;
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  clear: both; }
+  .error-notice.is-hidden {
+    display: none; }
+
+.error-message {
+  display: inline-block;
+  text-align: left;
+  margin: 0;
+  width: calc(100% - 25px); }
+
+.error-close {
+  display: inline-block;
+  float: right;
+  width: 25px;
+  height: 25px;
+  background: url("../../../assets/images/close.svg") no-repeat;
+  cursor: pointer; }
+
+/*---------------------------------------------------------------------*/
+/*  Login Screen SASS file
+/*---------------------------------------------------------------------*/
+#login-screen {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: 100%;
+  margin-top: 80px; }
+  #login-screen::after {
+    clear: both;
+    content: "";
+    display: block; }
+  #login-screen h1 {
+    display: none; }
+  @media screen and (max-width: 640px) {
+    #login-screen {
+      margin-top: 40px; } }
+
+#login-brand {
+  float: left;
+  display: block;
+  margin-right: 3.5786642602%;
+  width: 100%;
+  background: url("../../../assets/images/bestForMe-logo.svg") no-repeat;
+  height: 60px;
+  background-size: contain;
+  background-position: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 20px; }
+  #login-brand:last-child {
+    margin-right: 0; }
+
+.login-message {
+  color: #ffffff; }
+
+.login-form {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%; }
+  .login-form .login-username {
+    color: #4C4C4C;
+    height: 60px;
+    border: 1px solid #808080;
+    border-radius: 10px;
+    background: white;
+    margin: 20px 0 20px 0;
+    padding: 10px;
+    float: left;
+    display: block;
+    margin-right: 3.5786642602%;
+    width: 100%;
+    width: 100%; }
+    .login-form .login-username:last-child {
+      margin-right: 0; }
+  .login-form .login-password {
+    color: #4C4C4C;
+    height: 60px;
+    border: 1px solid #808080;
+    border-radius: 10px;
+    background: white;
+    margin: 20px 0 20px 0;
+    padding: 10px;
+    float: left;
+    display: block;
+    margin-right: 3.5786642602%;
+    width: 100%;
+    width: 100%; }
+    .login-form .login-password:last-child {
+      margin-right: 0; }
+  .login-form .login-button {
+    float: left;
+    display: block;
+    margin-right: 3.5786642602%;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center; }
+    .login-form .login-button:last-child {
+      margin-right: 0; }
+  .login-form .login-save-checkbox {
+    cursor: pointer;
+    float: left; }
+  .login-form .login-save-prompt {
+    margin: 0 0 0 20px;
+    float: left;
+    opacity: 0.4;
+    cursor: pointer; }
+  .login-form .login-forgotten-password {
+    float: left;
+    display: block;
+    margin-right: 3.5786642602%;
+    width: 100%;
+    text-align: center;
+    color: #4C4C4C; }
+    .login-form .login-forgotten-password:last-child {
+      margin-right: 0; }
+    .login-form .login-forgotten-password .login-reset-password {
+      text-decoration: underline;
+      cursor: pointer;
+      opacity: 0.4;
+      text-align: center;
+      word-wrap: normal;
+      float: right; }
+
+.login-bg {
+  background-color: #ffffff;
+  margin-bottom: -142px; }
+
+.full {
+  min-height: 100%;
+  margin-bottom: 60px; }
+
+.login-footer {
+  position: fixed;
+  height: 60px;
+  background-color: #4C4C4C;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px; }
+  .login-footer .login-footer-items {
+    margin: 0 auto;
+    display: table; }
+  .login-footer .login-footer-text {
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    margin: 20px 0 0 10px; }
+  .login-footer .login-footer-icon {
+    background: url("../../../assets/images/bestForMe-icon_white.svg") no-repeat;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin: 20px 10px 0 0; }
+
+/*---------------------------------------------------------------------*/
+/*  Error Screen SASS file
+/*---------------------------------------------------------------------*/
+#error {
+  margin: 0 20px 0 20px;
+  -webkit-animation: fadein 0.2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.2s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 0.2s;
+  /* Internet Explorer */
+  -o-animation: fadein 0.2s;
+  /* Opera < 12.1 */
+  animation: fadein 0.2s; }
+
+.error-message {
+  text-align: center; }
+
+/*---------------------------------------------------------------------*/
+/*  Home Screen SASS file
+/*---------------------------------------------------------------------*/
+.home-subheading {
+  text-transform: uppercase;
+  color: #4C4C4C; }
+
+#home {
+  -webkit-animation: fadein 0.2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.2s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 0.2s;
+  /* Internet Explorer */
+  -o-animation: fadein 0.2s;
+  /* Opera < 12.1 */
+  animation: fadein 0.2s; }
+
+.home-container {
+  margin: 0 20px 0 20px; }
+
+.logo-container {
+  margin: 40px 20px 20px 20px; }
+
+.logo {
+  display: block;
+  margin: 0 auto; }
+
+/*---------------------------------------------------------------------*/
+/*  Global state SASS file 
+/*  All state modifiers not specific to a module go there
+/*  State modifiers specific to a module go in the module SASS file
+/*  Guidelines: https://smacss.com/book/type-state
+/*---------------------------------------------------------------------*/
+.is-hidden {
+  display: none; }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .search input {
+    display: inline-flex;
+    margin-right: 0;
+    width: 80%;
+    float: right;
+    margin-top: 0; } }
+  @media screen and (-ms-high-contrast: active) and (max-width: 640px), screen and (-ms-high-contrast: none) and (max-width: 640px) {
+    .search input {
+      display: none; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .search-icon {
+    margin: 0; } }
+  @media screen and (-ms-high-contrast: active) and (max-width: 640px), screen and (-ms-high-contrast: none) and (max-width: 640px) {
+    .search-icon {
+      margin: 15px 0 0 0; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .news-feed-icon {
+    width: 25px;
+    margin: 0 10px 0 -5px; }
+  .header-search-elements {
+    top: 25px;
+    position: absolute; } }

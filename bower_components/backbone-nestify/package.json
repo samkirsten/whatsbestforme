@@ -1,0 +1,30 @@
+{
+    "name": "backbone-nestify",
+    "version": "0.6.0",
+    "description": "Nest Backbone Models and Collections.",
+    "scripts": {
+        "test": "mocha"
+    },
+    "dependencies": {
+        "underscore": ">= 1.5.1",
+        "backbone": ">= 1.0.0"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "chai": "~1.8.0",
+        "mocha": "~1.13.0",
+        "mockery": "1.4.0",
+        "grunt-contrib-jshint": "~0.6.4",
+        "grunt-mocha-test": "~0.10.2",
+        "grunt-contrib-concat": "~0.3.0",
+        "grunt-contrib-uglify": "~0.2.0"
+    },
+    "homepage": "http://revelytix.github.io/backbone-nestify/",
+    "main": "backbone-nestify.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/revelytix/backbone-nestify.git"
+    },
+    "github": "https://github.com/revelytix/backbone-nestify",
+    "copyright": "Copyright 2015 Teradata, Inc. All rights reserved."
+}

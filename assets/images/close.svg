@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="313px" height="75px" viewBox="0 0 313 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M-3.68322511e-16,37.5 L12,0 L12,75 L-3.68322511e-16,37.5 Z M312,37.5 L300,75 L300,0 L312,37.5 Z M12,0 L300,0 L300,75 L12,75 L12,0 Z" id="path-1"></path>
+        <filter x="-11.1%" y="-6.7%" width="122.1%" height="118.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(1.000000, 0.000000)">
+            <g id="Combined-Shape">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#4C4C4C" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+        <text id="CLOSE-TUTORIAL" font-family="Raleway-Regular, Raleway" font-size="24" font-weight="normal" fill="#FFFDFD">
+            <tspan x="58" y="44">CLOSE TUTORIAL</tspan>
+        </text>
+    </g>
+</svg>

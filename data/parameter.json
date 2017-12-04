@@ -1,0 +1,285 @@
+{
+  "parameters": [
+    {
+      "paramId": "0",
+      "gridId":"14",
+      "name": "Medical activity",
+      "description": "Find out what are the medical activities performed in your project. Focus on what are the medical activities to be started, or extended or improved if any.",
+      "type": "medical",
+      "uiType": "multipleTagSelect",
+      "options": [
+        {
+          "optionId": "0",
+          "name": "Sexual and reproductive health"
+        },
+        {
+          "optionId": "1",
+          "name": "Nutrition"
+        },
+        {
+          "optionId": "2",
+          "name": "Non-communicable chronic disease"
+        },
+        {
+          "optionId": "3",
+          "name": "TB/HIV"
+        },
+        {
+          "optionId": "4",
+          "name": "Pediatrics"
+        },
+        {
+          "optionId": "5",
+          "name": "Surgery"
+        },
+        {
+          "optionId": "6",
+          "name": "Acute infectious disease"
+        },
+        {
+          "optionId": "7",
+          "name": "Mental health care"
+        },
+        {
+          "optionId": "8",
+          "name": "Viral hepatitis"
+        },
+        {
+          "optionId": "9",
+          "name": "Emergency department"
+        },
+        {
+          "optionId": "10",
+          "name": "Vaccination"
+        },
+        {
+          "optionId": "11",
+          "name": "Description of the medical activity and others"
+        }
+      ]
+    },
+    {
+      "paramId": "1",
+      "gridId":"15",
+      "name": "Targeted beneficiaries",
+      "description": "Look if the medical activities are targeting a particular group(s) of people (vulnerable, gender focus, children etc.…) by opposition to general population as beneficiaries.",
+      "type": "medical",
+      "uiType": "freeText",
+      "options": []
+    },
+    {
+      "paramId": "2",
+      "gridId":"26",
+      "name": "Number of beneficiaries",
+      "description": "Find out the number of beneficiaries per day  or week or month (frequency) and how is estimated to change in the future in order to size the medical and/or the non-medical activities to be started, to be improved and/or to be extended.",
+      "type": "medical",
+      "uiType": "freeText",
+      "options": []
+    },
+    {
+      "paramId": "3",
+      "gridId":"17",
+      "name": "Infection control",
+      "description": "Find out if a specific level of precautions regarding hygiene and safety (in case of contagious diseases) is requested by the medical activity/facility. Look if a specific case would need a specific measure (isolation, shower etc…) Look if the standard infection control measure are implemented for the facility.",
+      "type": "medical",
+      "uiType": "freeText",
+      "options": []
+    },
+    {
+      "paramId": "4",
+      "gridId":"6",
+      "name": "Supportive services",
+      "description": "Select  the supportive services that are needed for the new activities or impacted by the change of the activity.",
+      "type": "medical",
+      "uiType": "multipleTagSelect",
+      "options": [
+        {
+          "optionId": "0",
+          "name": "Sterilization room"
+        },
+        {
+          "optionId": "1",
+          "name": "store"
+        },
+        {
+          "optionId": "2",
+          "name": "laboratory"
+        },
+        {
+          "optionId": "3",
+          "name": "pharmacy"
+        },
+        {
+          "optionId": "4",
+          "name": "radiology"
+        },
+        {
+          "optionId": "5",
+          "name": "offices"
+        },
+        {
+          "optionId": "6",
+          "name": "laundry"
+        },
+        {
+          "optionId": "7",
+          "name": "technical workshop"
+        },
+        {
+          "optionId": "8",
+          "name": "kitchen"
+        },
+        {
+          "optionId": "9",
+          "name": "telecommunication"
+        },
+        {
+          "optionId": "10",
+          "name": "water and sanitation"
+        },
+        {
+          "optionId": "11",
+          "name": "biomed workshop"
+        },
+        {
+          "optionId": "12",
+          "name": "mortuary"
+        },
+        {
+          "optionId": "13",
+          "name": "staff accommodation"
+        }
+      ]
+    },
+    {
+      "paramId": "5",
+      "gridId":"7",
+      "name": "Type of facility",
+      "description": "Identify what is the type of facility you are running/or starting/or extending/or improving and the opening hours. It can be a hospital facility, an outpatient clinic, an inpatient department or mobile facilities.",
+      "type": "medical",
+      "uiType": "dropdown",
+      "options": [
+        {
+          "optionId": "0",
+          "name": "Hospital"
+        },
+        {
+          "optionId": "1",
+          "name": "Outpatient department (OPD)"
+        },
+        {
+          "optionId": "2",
+          "name": "Vertical / specialized inpatient department (IPD)"
+        },
+        {
+          "optionId": "3",
+          "name": "Mobile services"
+        },
+        {
+          "optionId": "4",
+          "name": "Other"
+        }
+      ]
+    },
+    {
+      "paramId": "6",
+      "gridId":"44",
+      "name": "Lead time",
+      "description": "Look for the expected timeframe to start the activities.",
+      "type": "political",
+      "uiType": "freeText",
+      "options": []
+    },
+    {
+      "paramId": "7",
+      "gridId":"52",
+      "name": "Investment choice",
+      "description": "Find out what are the available resources (budget and RH) that are allocated for your project.",
+      "type": "political",
+      "uiType": "freeText",
+      "options": []
+    },
+    {
+      "paramId": "8",
+      "gridId":"53",
+      "name": "Duration of operation",
+      "description": "Look for the expected length of the project in months or years.",
+      "type": "political",
+      "uiType": "freeText",
+      "options": []
+    },
+    {
+      "paramId": "9",
+      "gridId":"63",
+      "name": "Exit strategy",
+      "description": "Find out if the project is run in collaboration with another organization or the MOH. Look for the exit strategy of your project to know how your intervention should be sustainable.",
+      "type": "political",
+      "uiType": "freeText",
+      "options": []
+    },
+    {
+      "paramId": "10",
+      "gridId":"41",
+      "name": "Setting",
+      "description": "Identify the country of the project. Describe the region specificities (surroundings areas of your project) Identify the location characteristic (rural, urban or camp).",
+      "type": "contextual",
+      "uiType": "freeText",
+      "options": []
+    },
+    {
+      "paramId": "11",
+      "gridId":"50",
+      "name": "Security",
+      "description": "Find out the necessity or not to mitigate different types of risks in your intervention and if there are some internal rules or any security situation that may impact the way you intervene. The security status can be safe, unsafe or in conflict.",
+      "type": "contextual",
+      "uiType": "freeText",
+      "options": []
+    },
+    {
+      "paramId": "12",
+      "gridId":"49",
+      "name": "Access",
+      "description": "Find out the physical accessibility of the project for the staff, the beneficiaries and the supply.  Describe road condition, alternative means of transportation, distances.",
+      "type": "contextual",
+      "uiType": "freeText",
+      "options": []
+    },
+    {
+      "paramId": "13",
+      "gridId":"48",
+      "name": "Climate",
+      "description": "Look for the characteristics of the location, the climate, the geography and the type of soil that may affect the technical solutions.",
+      "type": "contextual",
+      "uiType": "freeText",
+      "options": []
+    },
+    {
+      "paramId": "14",
+      "gridId":"60",
+      "name": "Norms & regulations",
+      "description": "Look for local standards, norms and regulations that could affect the way you intervene.",
+      "type": "contextual",
+      "uiType": "freeText",
+      "options": []
+    },
+    {
+      "paramId": "15",
+      "gridId":"59",
+      "name": "Society & culture",
+      "description": "Find out about practices, culture, beliefs and habits of the beneficiaries, staff and hosting country to ensure the way you intervene is appropriate.",
+      "type": "contextual",
+      "uiType": "freeText",
+      "options": []
+    },
+    {
+      "paramId": "16",
+      "gridId":"68",
+      "name": "Local resources",
+      "description": "Find out what are the available local resources in terms of human resources (staff and local actors), stakeholders, know-how and material.",
+      "type": "contextual",
+      "uiType": "freeText",
+      "options": []
+    }
+  ]
+}
+
